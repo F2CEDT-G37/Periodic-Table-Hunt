@@ -1,0 +1,140 @@
+html {
+  font-size: 1vw;
+  font-family: 'Courier New', Courier, monospace;
+}
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #ff7b00, #23d58b);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  display: inline;
+  /* overflow: hidden; */
+}
+#start, #header{    
+  text-align: center;
+  margin-top: 1%;
+}
+#logo{
+  margin-top: 1%;
+  width: 60%;
+}
+
+#picgame{
+  text-align: center;
+  margin-top: 1%;
+}
+
+#gameover{
+  width: 150%;
+}
+
+#endpage{
+text-align: center;
+}
+
+#menubutton{
+  margin-top: 1%;
+}
+
+#modal-container{
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+align-items: center;
+justify-content: center;
+display: flex;
+opacity: 0;
+pointer-events: none;
+transition: opacity 0.3s ease;
+background: linear-gradient(-45deg, #af573d, #b22e61, #c07834, #1cac70);
+background-size: 400% 400%;
+animation: gradient 15s ease infinite;
+}
+#modal-container.show{
+opacity: 1;
+pointer-events: auto;
+
+}
+.modal{
+background-color: white;
+width: 60%;
+max-width: 60%;
+padding: 1% 2% 1% 2%;
+border-radius: 10px;
+}
+.modal h1{
+font-size: 200%;
+}
+.modal h2{
+margin-left: 5%;
+font-size: 120%;
+}
+.modal ul{
+margin-left: 7%;
+}
+.modal li{
+font-size: 120%;
+}
+
+.hidden {
+  display: none;  
+}
+
+#cat{
+  width: 50%;
+}
+#gameover{
+width: 50%;
+}
+#score{
+  text-align: center;
+}
+
+.container{
+text-align: center;
+}
+
+button{
+background-color: #ff4343;
+font-size: 150%;
+padding: 0.5% 1%;
+border-radius: 15%;
+border: 100% solid #4affde;
+}
+button:hover {
+background-color: #ffa3a3;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+color: rgb(0, 0, 0);
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid;
+  width: 40%;
+}
+
+th, td {
+  text-align: alight;
+  border: 1px solid;
+  padding: 8px;
+  font-weight: bold;
+  border: 2px solid;
+  font-size: 180%;
+}
+
+th {
+  background-color: #ff4343;
+  color: #ffffff;
+  border-color: #000000;
+}
+#main-table-body{
+  background-color: #ffffff;
+}
+
+#tableal{
+  display: flex;
+  justify-content: center;
+
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTH - Periodic Table Hunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="picture/INTRO.gif" alt="logo">
+    </div>
+
+    <div id="start">
+        <button id="startbutton" role="button" onclick="document.getElementById('soundtrack').play()">START</button>
+        <button id="open-credit">CREDIT</button>  
+    </div>
+
+    <div id="score">
+        <h2 id="last-play">Your High Score:</h2>
+        <h2 id="total">0</h2>
+    </div>
+
+    <div id="modal-container">
+        <div class="modal">
+                <h1>-Credit-</h1>
+            <div>
+                <h2>Created By Group 37</h2>
+                <ul>
+                    <li>6633238321 - Saroot Areerattanawetch</li>
+                    <li>6633125021 - Nanfa Khuntawee</li>
+                    <li>6633155921 - Phongamon Jittamettakun</li>
+                    <li>6633150721 - Panisara Kanjanachotkamol</li>
+                    <li>6633151321 - Panisara Chakkaew</li>
+                </ul>
+                <h2>Faculty of Engineering - Chulalongkorn University</h2>
+                <h2>Bachelor of Engineering Program in Computer Engineering and Digital Technology</h2>
+                
+                <button id="close"> X </button>
+            </div>
+        </div>  
+    </div>
+    
+    <div class="container">
+        <h1 id="quiz" class="hidden">quiz</h1>
+        <button id="choice1" class="hidden" value = 1>ans1</button>
+        <button id="choice2" class="hidden" value = 2>ans2</button>
+    </div>
+
+    <div id="picgame">
+        <img id="cat" class="hidden" src="picture/catandmouse.gif" alt="Cat chasing a mouse">
+    </div>
+
+    <div id="endpage">
+        <img id="gameover" class="hidden" src="picture/catmeme.gif" alt="Gameover">
+    
+        <div id="menubutton">
+            <button id="return-to-menu" class="hidden">Return to Menu</button>
+        </div>
+    </div>
+
+    <div id="tableal">
+        <table id="main-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody id="main-table-body">
+    
+            </tbody>
+          </table>
+    </div>
+    
+
+
+    <audio id="soundtrack" loop>
+        <source src="picture/soundtrack.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script type="module" src="scripts/main.js"></script>
+    
+</body>
+</html>
